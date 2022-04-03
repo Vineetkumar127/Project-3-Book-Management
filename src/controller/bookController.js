@@ -124,7 +124,7 @@ const getBook = async function (req, res) {
         if (isValidRequestBody(data)) {
             return res.status(400).send({ status: false, error: 'this is not allowed' })
         }
-        // if(!isValidRequestBody(query)){return res.status(400).send({status:true,bookList:books})}
+       
 
         if (isValidRequestBody(query)) {
             const { userId, category, subcategory } = query
@@ -194,6 +194,7 @@ const bookById = async function (req, res) {
 
 //......................................sixth Api updateBook by Id...............................
 
+// this API for Update Book
 
 const updateBook = async function (req, res) {
     try {
@@ -307,4 +308,4 @@ module.exports.createBook = createBook
 module.exports.getBook = getBook
 module.exports.bookById = bookById
 module.exports.updateBook = updateBook
-module.exports.deleteBookById = deleteBookById
+module.exports.deleteBookBy

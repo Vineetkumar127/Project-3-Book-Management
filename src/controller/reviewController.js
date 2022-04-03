@@ -44,15 +44,14 @@ const createReview = async function (req, res) {
 
 
 
-    // let { booksId,reviewedBy,reviewedAt,rating,review }=data
-
+    
 
     const checkBookId = await bookModel.findOne({ _id: bookId, isDeleted: false })
 
     if (!checkBookId)
         return res.status(400).send({ status: false, message: "bookId not found" })
 
-    //if(!isValid(data.reviewedBy)){return res.status(400).send({status: false, message:"reviewedBy is required"})}
+   
 
     if (!isValidDate(data.reviewedAt)) {
         return res.status(400).send({ status: false, message: "reviewedAt is required" })
@@ -82,7 +81,7 @@ const createReview = async function (req, res) {
 
     return res.status(201).send({ status: true, data: reviewData })
 
-    // return res.status(201).send({status: true, message: reviewData})
+  
 
 }
 
