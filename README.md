@@ -1,16 +1,7 @@
 # Thorium
 
 ## Project - Books Management
-Group Members:
-1. Shabdika Pandey
-2. Vineet Kumar
-3. Manish Kumar
-4. Taabish
 
-
-repo link : https://github.com/Manish-162403/bookManagement.git
-database link: mongodb+srv://group13:UEEqzwKeluhyT2uM@cluster0.hkvjs.mongodb.net/group17Database?retryWrites=true&w=majority
-branch: https://github.com/Manish-162403/bookManagement/tree/project/booksManagementGroup17
 
 ### Key points
 - Create a group database `groupXDatabase`. You can clean the db you previously used and resue that.
